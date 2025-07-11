@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+header .logo h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+header .nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15%;
+}
+
+header .nav-items ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-items ul li a{
+    text-decoration: none;
+    color:#ffffff;
+    font-weight: 600;
+}
+
+header .nav-items ul li a:hover{
+    color:aqua;
+}
+
+header .search{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+}
+
+header .search input {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px ;
+}
+
+header .search input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(222, 71, 71, 0.2);
+}
+
+header .search button {
+    padding: 10px 13px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+header .button {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+header .button button {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+header .button button a {
+    text-decoration: none;
+    color: #000000;
+}
+
+main .hero-section{
+    background-image: url('https://tongengineering.com/us/wp-content/uploads/sites/3/2021/11/IMG_6130-1024x683-1.webp');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+main .hero-section h1 {
+    font-size: 48px;
+}
+
+main .hero-section p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+main .hero-section button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+main .hero-section button a {
+    text-decoration: none;
+    color: #000000;
+}
+
+main .hero-section button:hover {
+    background-color: #808080;
+}
+
+main .enquire{
+    position: absolute;
+    top: 90px;
+    right: 15px;    
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height:51%;
+    width:300px;
+    display: inline-block;
+}
+
+main .enquire input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+main .enquire textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100px;
+}
+
+main .enquire button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.products {
+    display: inline;
+    padding: 20px;
+}
+
+.products h2{
+    font-size:xx-large;
+    margin-bottom: 20px;
+    padding-left: 45%;
+}
+
+.products p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.products .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.products .product-item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 0px 180px;
+    margin: 10px ;
+    text-align: center;
+}
+
+.products .product-item img{
+    width:500px;
+    height: 90%;
+}
+
+.products .product-item .details{
+    display: inline;
+    padding-left: 90px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.products .product-item .details ol {
+      list-style-position: inside; 
+      margin: 0;
+      padding: 0;
+}
+
+.products .product-item .details ol li{
+    padding: 0;
+    margin: 0;
+    line-height: 1.4; 
+}
+
+.products .product-item button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.products .product-item button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.about-company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.about-company .content{
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-company .img{
+    height: 600px;
+    width: 55%;
+    background-color:#000000;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#f4f4f4;
+}
+
+footer .footer-contact {
+    height: 10px;
+    width: 100%;
+    padding: 10px 0px;
+    background-color:#f4f4f4;
+    color: #000000;
+    text-align: center;
+    position: relative;
+    top: 8px;
+}
+
+footer .footer-contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+footer .links ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .links ul li {
+    margin-bottom: 10px;
+}
+
+footer .links ul li a {
+    text-decoration: none;
+    color: #000000;
+    margin-right: 150px;
+}
+
+footer .map{
+    margin-right: 50px;
+}
+
+.rights{
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding:5px;
+}
+
+/*product.html*/
+.swiper .swiper-wrapper .swiper-slide img{
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.product h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Card Styles */
+.cards {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 450px;
+  height: 450px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.cards a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 15px;
+}
+
+.cards img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.cards h2 {
+  font-size: 18px;
+  margin: 15px 0 10px;
+}
+
+.cards p {
+  font-size: 14px;
+  color: #666;
+}
+
+.cards button{
+    padding: 5px 8px;
+    border: none;
+    border-radius: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+/* Hover Effect */
+.cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/*login.css*/
+.form{
+    width: 350px;
+    margin: 120px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-content: center;
+}
+
+.form h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.login-form button:hover{
+    background-color: #808080;
+}
+
+.form p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form p a {
+    text-decoration: none;
+    color: #000000;
+}
